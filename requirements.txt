@@ -1,0 +1,14 @@
+transformers
+datasets
+pillow
+numpy
+torch
+gradio
+streaming-stt-nemo
+edge-tts
+asyncio
+spaces
+torchvision
+accelerate
+beautifulsoup4
+requests
