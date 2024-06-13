@@ -1,21 +1,10 @@
 version: '3.8'
 
 services:
-  chat:
+  gpt4o:
     build: .
-    command: python chat.py
     ports:
       - "7860:7860"
-    volumes:
-      - .:/usr/src/app
-    environment:
-      - PYTHONUNBUFFERED=1
-
-  voice:
-    build: .
-    command: python voice.py
-    ports:
-      - "7861:7860"
     volumes:
       - .:/usr/src/app
     environment:

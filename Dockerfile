@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y ffmpeg
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Install additional dependencies for voice processing
-RUN pip install edge-tts nemo_toolkit
+RUN pip install edge-tts nemo_toolkit transformers huggingface_hub
 
 # Expose port 7860 for Gradio
 EXPOSE 7860
@@ -23,4 +23,4 @@ EXPOSE 7860
 ENV PYTHONUNBUFFERED=1
 
 # Set the entry point for the container to run any script
-ENTRYPOINT ["python"]
+ENTRYPOINT ["python", "app.py"]
