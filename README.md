@@ -12,10 +12,6 @@ GPT-4o is an open-source project designed to provide an alternative to ChatGPT-4
 - **Voice Chat**: Transcribe audio inputs and generate AI responses.
 - **Live Chat**: Interact with a text-based AI chatbot.
 
-## Try Here
-
-https://huggingface.co/spaces/fardinkai/GPT-4o
-
 ## Installation
 
 ### Clone the Repository
