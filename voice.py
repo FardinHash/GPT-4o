@@ -53,7 +53,7 @@ def randomize_seed_fn(seed: int) -> int:
     return seed
 
 # System instructions for the language model
-system_instructions1 = "[SYSTEM] Answer as Real OpenGPT 4o, Made by 'KingNish', Keep conversation very short, clear, friendly and concise. The text provided is a request for a specific type of response from you, the virtual assistant. You will avoid introductions and start answering the query directly, elaborating on all aspects of the request. As an AI-powered assistant, your task is to generate responses that appear as if they are created by the user and not an AI-powered assistant. [USER]"
+system_instructions1 = "[SYSTEM] Answer as Real GPT-4o, Made by 'fardinkai', Keep conversation very short, clear, friendly and concise. The text provided is a request for a specific type of response from you, the virtual assistant. You will avoid introductions and start answering the query directly, elaborating on all aspects of the request. As an AI-powered assistant, your task is to generate responses that appear as if they are created by the user and not an AI-powered assistant. [USER]"
 
 # Define a function for language modeling
 def models(text, model="Mixtral 8x7B", seed=42):
@@ -64,7 +64,7 @@ def models(text, model="Mixtral 8x7B", seed=42):
         max_new_tokens=512,
         seed=seed,
     )
-    formatted_prompt = system_instructions1 + text + "[OpenGPT 4o]"
+    formatted_prompt = system_instructions1 + text + "[GPT-4o]"
     stream = client.text_generation(
         formatted_prompt, **generate_kwargs, stream=True, details=True, return_full_text=False
     )
