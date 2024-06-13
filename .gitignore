@@ -139,9 +139,9 @@ cython_debug/
 # VS Code
 .vscode/
 
-# Docker
-**/Dockerfile
-**/docker-compose.yml
+# # Docker
+# **/Dockerfile
+# **/docker-compose.yml
 
 # Ignore Docker images and containers
 **/images/
