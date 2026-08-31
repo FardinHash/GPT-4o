@@ -1,27 +1,35 @@
-# GPT-4o: Open Source Alternative to ChatGPT-4 with FREE access
+# GPT-4o
 
 ![logo](logo.png)
 
-## Overview
+GPT-4o provides a local Gradio interface for Hugging Face hosted chat models. The
+application does not download or load a large model at startup; generation is
+performed through the Hugging Face Inference API.
 
-GPT-4o is an open-source project designed to provide an alternative to ChatGPT-4. This project includes functionalities such as image captioning, voice-to-text transcription, and conversational AI using state-of-the-art models from Hugging Face.
+## Setup
 
-## Features
+1. Create and activate a Python 3.10 or later virtual environment.
+2. Install dependencies:
 
-- **Image Chat**: Generate captions and responses based on input images.
-- **Voice Chat**: Transcribe audio inputs and generate AI responses.
-- **Live Chat**: Interact with a text-based AI chatbot.
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-## Installation
+3. Create a Hugging Face access token and make it available as `HF_TOKEN`.
+4. Start the application:
 
-### Clone the Repository
+   ```sh
+   python app.py
+   ```
+
+Open the local URL printed by Gradio. Select a hosted model from the dropdown
+and send a message.
+
+## Docker
 
 ```sh
-git clone https://github.com/FardinHash/GPT4o.git
-cd GPT4o
+docker compose up --build
 ```
 
-### Docker Prerequisites
-
-- Docker
-- Docker Compose (optional but recommended)
+Pass `HF_TOKEN` to the container through your shell environment or your
+Compose environment configuration.

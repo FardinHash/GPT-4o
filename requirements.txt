@@ -1,14 +1,2 @@
-transformers
-datasets
-pillow
-numpy
-torch
-gradio
-streaming-stt-nemo
-edge-tts
-asyncio
-spaces
-torchvision
-accelerate
-beautifulsoup4
-requests
+gradio>=4.44
+huggingface_hub>=0.24
