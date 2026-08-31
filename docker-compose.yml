@@ -9,3 +9,4 @@ services:
       - .:/usr/src/app
     environment:
       - PYTHONUNBUFFERED=1
+      - HF_TOKEN=${HF_TOKEN:?Set HF_TOKEN before starting the service}
